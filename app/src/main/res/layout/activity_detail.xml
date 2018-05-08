@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent_99" />
+
+    <com.anhhn.weatherdemoapp.widget.CustomTextView
+        android:id="@+id/tvCurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:textColor="@color/textPrimary"
+        android:textSize="80sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="27" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ivWeather"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:actualImageScaleType="fitCenter"
+        android:layout_margin="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentTemp">
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font_path="fonts/Roboto-Bold.ttf"
+            android:textColor="@color/textPrimary"
+            android:textSize="28sp"
+            android:padding="8dp"
+            tools:text="London"/>
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvMinTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:padding="8dp"
+            tools:text="10"/>
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvMaxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:padding="8dp"
+            tools:text="20"/>
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvHumid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:padding="8dp"
+            tools:text="70%"/>
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:padding="8dp"
+            tools:text="8 Pa"/>
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvWindSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:padding="8dp"
+            tools:text="2 m/s"/>
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvSunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:padding="8dp"
+            tools:text="05:00 AM"/>
+
+        <com.anhhn.weatherdemoapp.widget.CustomTextView
+            android:id="@+id/tvSunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:padding="8dp"
+            tools:text="06:00 PM"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/refresh"/>
+
+
+</android.support.constraint.ConstraintLayout>

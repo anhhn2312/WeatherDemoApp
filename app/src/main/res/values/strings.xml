@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WeatherDemoApp</string>
+
+    //SplashActivity
+    <string name="author">Author: Anh Ha Nguyen</string>
+    <string name="env_prod">Environment: Production</string>
+    <string name="env_dev">Environment: Dev</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="degree_text">%1$d°C</string>
+    <string name="weather_updated">Weather is up to date</string>
+    <string name="max_temp">Maximum temperature: %1$d°C</string>
+    <string name="min_temp">Minimum temperature: %1$d°C</string>
+    <string name="humid">Humidity: %1$d&#65130;</string>
+    <string name="pressure">Pressure: %1$f Pa</string>
+    <string name="wind_speed">Wind: %1$f m/s</string>
+    <string name="sunrise">Sunrise: %1$s</string>
+    <string name="sunset">Sunset: %1$s</string>
+
+    //error message
+    <string name="offline">Offline</string>
+
+
+</resources>
