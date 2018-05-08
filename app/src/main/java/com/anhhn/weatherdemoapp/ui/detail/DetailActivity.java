@@ -77,7 +77,7 @@ public class DetailActivity extends BaseActivity<DetailContract.Presenter> imple
     private void bindView() {
         tvCurrentTemp.setText(String.format(getString(R.string.degree_text), mWeather.getCurrentTemp()));
         ImageUtils.loadImage(ivWeather, AppUtils.getInstance().
-                getDrawableResourceByName("icon" + mWeather.getIcon()));
+                getWeatherIconByName(mWeather.getIcon()));
         tvCity.setText(mWeather.getName());
         tvMaxTemp.setText(String.format(getString(R.string.max_temp), mWeather.getMaxTemp()));
         tvMinTemp.setText(String.format(getString(R.string.min_temp), mWeather.getMinTemp()));

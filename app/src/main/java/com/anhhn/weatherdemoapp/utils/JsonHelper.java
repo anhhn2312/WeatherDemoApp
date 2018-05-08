@@ -16,7 +16,7 @@ public class JsonHelper {
         return sGson;
     }
 
-    public synchronized static boolean isJson(String data) {
+    public static synchronized boolean isJson(String data) {
         if (data == null || "".equals(data)) return false;
         try {
             new JSONObject(data);

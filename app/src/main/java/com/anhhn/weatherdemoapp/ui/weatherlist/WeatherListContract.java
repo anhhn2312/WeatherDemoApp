@@ -22,7 +22,5 @@ public class WeatherListContract {
     interface Presenter extends FragmentContract.Presenter<View, Interactor> {
         void fetchWeather();
         void onFetchWeatherSuccess(List<WeatherDTO> weatherDTOS);
-
-        void fetchMyLocationWeather();
     }
 }

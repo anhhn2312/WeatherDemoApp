@@ -3,6 +3,7 @@
     package="com.anhhn.weatherdemoapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
@@ -21,7 +22,7 @@
             android:value="0af9a05fe6f013141b4260aa4162945c9e0de8d1" />
 
         <activity
-            android:name=".ui.splash.SplashActivityProd"
+            android:name=".ui.splash.StartActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +30,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.splash.SplashActivityDev"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.splash.SplashActivityProd"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.home.HomeActivity"

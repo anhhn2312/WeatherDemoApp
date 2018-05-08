@@ -6,6 +6,8 @@
     <string name="env_prod">Environment: Production</string>
     <string name="env_dev">Environment: Dev</string>
 
+    <string name="my_location">My location:</string>
+
     <string name="refresh">Refresh</string>
     <string name="degree_text">%1$d°C</string>
     <string name="weather_updated">Weather is up to date</string>

@@ -20,10 +20,14 @@ public class AppUtils {
     this.mContext = context;
   }
 
-  public int getDrawableResourceByName(String aString){
+  public int getWeatherIconByName(String identifier){
+    return getDrawableResourceByName("icon".concat(identifier));
+  }
+
+  public int getDrawableResourceByName(String identifier){
     try {
       String packageName = mContext.getPackageName();
-      int resId = mContext.getResources().getIdentifier(aString, "drawable", packageName);
+      int resId = mContext.getResources().getIdentifier(identifier, "drawable", packageName);
       return resId;
     }catch(Exception e){
       return 0;

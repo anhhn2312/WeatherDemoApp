@@ -36,6 +36,7 @@ android {
             dimension "id"
             applicationId rootProject.ext.appIdProd
 
+            buildConfigField 'String', 'ENVIRONMENT', '"prod"'
             buildConfigField 'String', 'BASE_URL', '"http://api.openweathermap.org/"'
             buildConfigField 'String', 'API_VERSION', '"1.0"'
         }
@@ -44,6 +45,7 @@ android {
             dimension "id"
             applicationId rootProject.ext.appIdDev
 
+            buildConfigField 'String', 'ENVIRONMENT', '"dev"'
             buildConfigField 'String', 'BASE_URL', '"http://api.openweathermap.org/"'
             buildConfigField 'String', 'API_VERSION', '"1.0"'
 
@@ -53,6 +55,7 @@ android {
             dimension "id"
             applicationId rootProject.ext.appIdTest
 
+            buildConfigField 'String', 'ENVIRONMENT', '"qa"'
             buildConfigField 'String', 'BASE_URL', '"http://api.openweathermap.org/"'
             buildConfigField 'String', 'API_VERSION', '"1.0"'
         }
@@ -88,6 +91,7 @@ dependencies {
     implementation 'com.facebook.fresco:fresco:1.7.1'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    implementation 'com.google.android.gms:play-services-location:11.+'
     implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
         transitive = true
     }

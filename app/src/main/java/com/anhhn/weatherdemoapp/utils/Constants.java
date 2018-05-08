@@ -8,6 +8,10 @@ public class Constants {
   public static final String SAN_FRANCISCO_ID = "5391959";
   public static final String[] LOCATIONS = new String[]{LONDON_ID, PRAGUE_ID, SAN_FRANCISCO_ID};
 
+  public static class ENVIRONMENT{
+    public static final String ENV_PROD = "prod";
+  }
+
   public static class Bundle{
     public static final String KEY_WEATHER_ID = "KEY_WEATHER_ID";
   }

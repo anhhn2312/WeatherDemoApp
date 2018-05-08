@@ -20,4 +20,9 @@ public interface WeatherService {
   Single<WeatherResponse> getWeatherDetail(@Query("id") String cityId,
                                                          @Query("appid") String apiKey);
 
+  @GET("data/2.5/weather?units=metric")
+  Single<WeatherResponse> getWeatherByCoordinate(@Query("appid") String apiKey,
+                                                 @Query("lat") double latitude,
+                                                 @Query("lon") double longitude);
+
 }

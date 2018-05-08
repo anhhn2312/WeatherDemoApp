@@ -50,7 +50,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     weather.getCurrentTemp()));
             itemHolder.tvWeather.setText(weather.getWeatherDescription());
             ImageUtils.loadImage(itemHolder.ivIcon, AppUtils.getInstance().
-                    getDrawableResourceByName("icon"+weather.getIcon()));
+                    getWeatherIconByName(weather.getIcon()));
         }
     }
 

@@ -23,7 +23,7 @@ public class NetworkUtil {
         }
     }
 
-    public static enum NetworkType {
+    public enum NetworkType {
         DISCONNECT,
         WIFI,
         MOBILE

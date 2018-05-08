@@ -46,10 +46,5 @@ public class WeatherListPresenter extends BaseFragmentPresenter<WeatherListContr
         getView().onFetchWeatherSuccess(weatherDTOS);
         getView().dismissLoadingDialog();
     }
-
-    @Override
-    public void fetchMyLocationWeather() {
-
-    }
 }
 
