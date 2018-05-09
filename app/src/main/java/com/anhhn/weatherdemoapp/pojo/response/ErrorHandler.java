@@ -2,7 +2,6 @@ package com.anhhn.weatherdemoapp.pojo.response;
 
 import android.content.Context;
 import android.system.ErrnoException;
-import android.text.TextUtils;
 
 import com.anhhn.weatherdemoapp.R;
 import com.anhhn.weatherdemoapp.utils.JsonHelper;

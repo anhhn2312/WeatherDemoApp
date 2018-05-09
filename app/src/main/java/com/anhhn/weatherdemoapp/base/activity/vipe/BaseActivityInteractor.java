@@ -2,11 +2,6 @@ package com.anhhn.weatherdemoapp.base.activity.vipe;
 
 import com.anhhn.weatherdemoapp.pojo.response.ErrorHandler;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import io.reactivex.disposables.Disposable;
-
 
 public abstract class BaseActivityInteractor<P extends ActivityContract.Presenter>
         implements ActivityContract.Interactor<P> {

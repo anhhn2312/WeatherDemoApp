@@ -3,9 +3,6 @@ package com.anhhn.weatherdemoapp.base.activity.vipe;
 import android.content.Context;
 import android.support.annotation.StringRes;
 
-import io.reactivex.disposables.Disposable;
-
-
 public interface ActivityContract {
   interface Interactor<P extends Presenter> {
     P getPresenter();

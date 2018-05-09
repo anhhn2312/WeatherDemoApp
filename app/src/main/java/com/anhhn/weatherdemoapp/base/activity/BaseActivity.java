@@ -2,14 +2,12 @@ package com.anhhn.weatherdemoapp.base.activity;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
-import com.anhhn.weatherdemoapp.R;
 import com.anhhn.weatherdemoapp.base.activity.vipe.ActivityContract;
 import com.anhhn.weatherdemoapp.utils.DialogUtils;
 

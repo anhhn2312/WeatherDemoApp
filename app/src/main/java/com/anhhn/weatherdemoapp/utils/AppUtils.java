@@ -11,7 +11,7 @@ public class AppUtils {
   private static AppUtils mInstance = null;
   private Context mContext;
 
-  public synchronized  static AppUtils getInstance() {
+  public static synchronized  AppUtils getInstance() {
     if(mInstance ==null) mInstance = new AppUtils();
     return mInstance;
   }
@@ -27,8 +27,7 @@ public class AppUtils {
   public int getDrawableResourceByName(String identifier){
     try {
       String packageName = mContext.getPackageName();
-      int resId = mContext.getResources().getIdentifier(identifier, "drawable", packageName);
-      return resId;
+      return mContext.getResources().getIdentifier(identifier, "drawable", packageName);
     }catch(Exception e){
       return 0;
     }

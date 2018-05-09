@@ -29,9 +29,7 @@ public class ButtonFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_button, container, false);
         btnRefresh = view.findViewById(R.id.btnRefresh);
-        btnRefresh.setOnClickListener(v -> {
-            ((HomeActivity)getActivity()).refreshList();
-        });
+        btnRefresh.setOnClickListener(v -> ((HomeActivity)getActivity()).refreshList());
 
         return view;
     }

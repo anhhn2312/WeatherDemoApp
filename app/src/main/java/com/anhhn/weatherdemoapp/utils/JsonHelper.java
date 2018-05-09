@@ -9,7 +9,7 @@ import org.json.JSONObject;
 public class JsonHelper {
     private static Gson sGson;
 
-    public synchronized static Gson getGson() {
+    public static synchronized Gson getGson() {
         if (sGson == null) {
             sGson = new Gson();
         }

@@ -4,8 +4,6 @@ import android.content.Context;
 import android.support.annotation.StringRes;
 import android.support.v4.app.Fragment;
 
-import io.reactivex.disposables.Disposable;
-
 
 public interface FragmentContract {
   interface Interactor<P extends Presenter> {
